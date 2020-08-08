@@ -22,7 +22,7 @@ length = int(input('What is the length in pages of the book\n>>>'))
 # This will be turned into a prompt
 query = f"""
 INSERT INTO books(title, publication_date, pages) 
-VALUES({title, publication_date, length});
+VALUES{title, publication_date, length};
 """
 
 cursor.execute(query)
